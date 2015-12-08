@@ -5,4 +5,4 @@ env:
 before_install:
 - brew update
 - brew outdated swiftlint || brew upgrade swiftlint
-script: "./scripts/saddler.sh"
+script: ./scripts/analyze.sh
