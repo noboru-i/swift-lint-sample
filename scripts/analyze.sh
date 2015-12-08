@@ -2,7 +2,7 @@
 
 set -eu
 
-gem install --no-document checkstyle_filter-git saddler saddler-reporter-github\
+gem install --no-document checkstyle_filter-git saddler saddler-reporter-github \
 swiftlint_translate_checkstyle_format
 
 sed -i -e 's/# reporter: json/reporter: json/g' .swiftlint.yml
