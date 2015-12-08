@@ -1,5 +1,7 @@
 language: objective-c
 before_install:
-- brew update
-- brew outdated swiftlint || brew upgrade swiftlint
+  - brew update
+  - brew outdated swiftlint || brew upgrade swiftlint
 script: ./scripts/analyze.sh
+notifications:
+  email: false
