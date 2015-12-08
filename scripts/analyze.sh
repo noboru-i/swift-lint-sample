@@ -18,7 +18,7 @@ echo "********************"
 echo "* SwiftLint        *"
 echo "********************"
 swiftlint > swiftlint.result.json || true
-cat swiftlint.result.json
+cat swiftlint.result.json \
     | swiftlint_translate_checkstyle_format translate \
     | checkstyle_filter-git diff origin/master \
     | saddler report --require saddler/reporter/github --reporter $REPORTER
