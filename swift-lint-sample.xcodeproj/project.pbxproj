@@ -138,6 +138,7 @@
 				51BC12BA1C16B37700346BC9 /* Sources */,
 				51BC12BB1C16B37700346BC9 /* Frameworks */,
 				51BC12BC1C16B37700346BC9 /* Resources */,
+				51BC12F11C16B77700346BC9 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -256,6 +257,22 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		51BC12F11C16B77700346BC9 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if which swiftlint >/dev/null; then\nswiftlint\nelse\necho \"SwiftLint does not exist, download from https://github.com/realm/SwiftLint\"\nfi";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		51BC12BA1C16B37700346BC9 /* Sources */ = {
@@ -491,6 +508,7 @@
 				51BC12EA1C16B37700346BC9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		51BC12EB1C16B37700346BC9 /* Build configuration list for PBXNativeTarget "swift-lint-sampleTests" */ = {
 			isa = XCConfigurationList;
@@ -499,6 +517,7 @@
 				51BC12ED1C16B37700346BC9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		51BC12EE1C16B37700346BC9 /* Build configuration list for PBXNativeTarget "swift-lint-sampleUITests" */ = {
 			isa = XCConfigurationList;
@@ -507,6 +526,7 @@
 				51BC12F01C16B37700346BC9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
