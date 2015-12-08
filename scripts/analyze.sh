@@ -17,7 +17,7 @@ fi
 echo "********************"
 echo "* SwiftLint        *"
 echo "********************"
-swiftlint > swiftlint.result.json
+swiftlint > swiftlint.result.json || true
 cat swiftlint.result.json
     | swiftlint_translate_checkstyle_format translate \
     | checkstyle_filter-git diff origin/master \
