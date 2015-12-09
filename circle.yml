@@ -1,0 +1,6 @@
+machine:
+  environment:
+    XCODE_SCHEME: swift-lint-sample
+  timezone: Asia/Tokyo
+  xcode:
+    version: "7.1"
